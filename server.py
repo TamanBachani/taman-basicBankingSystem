@@ -1,6 +1,7 @@
 from flask import Flask, request, render_template, url_for, redirect, flash
 from flask_sqlalchemy import SQLAlchemy
 import os
+from stringcase import titlecase
 
 app = Flask(__name__)
 
@@ -112,8 +113,8 @@ def show_customer(show_id):
 def transfer():
     if request.method == 'POST':
         # collecting data entered via form
-        from_acc = request.form.get('from')
-        to_acc = request.form.get('to')
+        from_acc = titlecase(request.form.get('from'))
+        to_acc = titlecase(request.form.get('to'))
         try:
             int(request.form.get('amount'))
         except:
