@@ -1,9 +1,10 @@
 from flask import Flask, request, render_template, url_for, redirect, flash
 from flask_sqlalchemy import SQLAlchemy
+import os
 
 app = Flask(__name__)
 
-app.config['SECRET_KEY'] = 'MIHRB1'
+app.config['SECRET_KEY'] = os.environ.get('FLASK_CONFIG_KEY')
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///bank.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
@@ -30,6 +31,7 @@ class Transfers(db.Model):
 
 
 db.create_all()
+
 
 # Routes
 # /
