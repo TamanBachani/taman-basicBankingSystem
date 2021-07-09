@@ -1,0 +1,178 @@
+#welcome{
+    background-color: #FFECAD;
+    padding-bottom: 12%;
+    text-align: center;
+}
+
+#welcome-message{
+    font-family: 'poppins-bold', sans-serif;
+    color: #003B7A;
+    font-weight:800;
+    padding-left: 2.5rem;
+    padding-top: 15%;
+    padding-bottom: 7%;
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+#welcome-image{
+    width: 600px;
+    height: 350px;
+    position: absolute;
+    right: 0%;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+    #welcome-image{
+      display: flex;
+      align-items: center;
+    }
+}
+
+.feature-boxes{
+    background-color: #003B7A;
+    color: #FFECAD;
+    border-color: #FFECAD;
+    border-width: 200px;
+    border-radius: 10%;
+    width: 400px;
+    text-align: center;
+
+}
+
+.card{
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 10%;
+    width: 400px; 
+}
+
+#features{
+    padding-top: 150px;
+    background-image: linear-gradient(#FFECAD, #85C4FF);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.feature-title{
+    padding-top: 3%;
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+}
+
+.feature-description{
+    padding-top: 1%;
+    letter-spacing: 1.5px;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+.fa-solid{
+    color: #FFD60A;
+}
+
+.fa-solid:hover{
+    color: #85C4FF;
+}
+
+#mainLinks{
+    background-image: linear-gradient(#FFECAD, #85C4FF);
+    color: #003B7A;
+}
+
+.takemethere{
+    background-color: #003B7A;
+    color: #FFECAD;
+    border-color: #FFD60A;
+}
+
+.featurette-heading{
+    font-weight: 700;
+}
+
+.sub-heading{
+    font-weight: 500;
+}
+
+.featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  }
+  
+  /* Thin out the marketing headings */
+.featurette-heading {
+    line-height: 1.2;
+    letter-spacing: -.05rem;
+}
+  
+  
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
+  
+@media (min-width: 40em) {
+    /* Bump up size of carousel content */
+
+    .featurette-heading {
+      font-size: 40px;
+    }
+    #welcome-image{
+      display: flex;
+      align-items: center;
+    }
+  }
+  
+@media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+
+
+  }
+  
+
+.end{
+    background-color: #FFD60A;
+    text-align: center;
+}
+
+#cwm{
+padding-top: 2.5rem;
+padding-bottom: 2rem;
+font-weight: 800;
+color: #003B7A;
+letter-spacing: 2.px;
+}
+
+.sm-icons{
+    color: #003B7A;
+    padding-bottom: 2rem;
+}
+
+#linkedin{
+    color: #003B7A;
+}
+
+#github{
+    color: #003B7A;
+}
+
+.fa-linkedin{
+    margin-right: 50px;
+}
+
+.fa-linkedin:hover{
+    color: #85C4FF;  
+}
+
+
+.fa-github:hover{
+    color: #85C4FF;  
+}
+

@@ -1,0 +1,43 @@
+{% extends "boilerplate.html" %}
+{% block head %}
+  {{ super() }}
+  <link rel="stylesheet" href="../static/styles/customers.css">
+{% endblock %}
+{% block content %}
+<div id="'customer-header"><h1 class="text-center" id="text-customer">All customers</h1></div>
+  <div>
+
+
+    <div class="row text-center cust-gradient">
+      {% for c in customers %}
+
+      <div class="col-lg-4 customer">
+        <img src="https://images.unsplash.com/photo-1453888768187-1e6746aba265?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1053&q=80" class="bd-placeholder-img rounded-circle" width="140" height="140" ></img>
+
+        <h2 id="customer-name">{{c.name}}</h2>
+        <p class="customer-text">The Current Balance in {{c.name}}'s account is <span id="bal">₹{{c.current_balance}}</span></p>
+        <p><a class="btn btn-outline-primary customer-button" href="/customers/{{c.id}}">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      {% endfor %}
+
+    </div><!-- /.row -->
+
+    <!-- <div class="row">
+        {% for c in customers %}
+  <div class="col-sm-6 col-md-6">
+    <div class="card text-center">
+      <div class="card-body">
+        <h5 class="card-title">{{c.name}}</h5>
+        <p class="card-text">Balance: ₹{{c.current_balance}}</p>
+        <a href="/customers/{{c.id}}" class="btn btn-primary">View details</a>
+
+      </div>
+    </div>
+  </div>
+            {% endfor %}
+    </div> -->
+
+      </div>
+
+
+{% endblock %}

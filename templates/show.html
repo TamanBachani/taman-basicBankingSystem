@@ -1,0 +1,31 @@
+
+
+{% extends "boilerplate.html" %}
+{% block head %}
+  {{ super() }}
+  <link rel="stylesheet" href="../static/styles/form.css">
+{% endblock %}
+{% block content %}
+    <div class="container d-flex justify-content-center align-items-center mt-5 mb-5">
+    <div class="row">
+        <div class="col-md-6 offset-md-3 col-xl-4 offset-xl-4 col-sm-8 offset-sm-2">
+            <div class="card shadow">
+                <img src="https://images.unsplash.com/photo-1600881217197-068e1d79ffb8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=890&q=80"
+                    alt="" class="card-img-top" />
+                <div class="card-body">
+                    <h5 class="card-title" style="font-weight: bolder; text-align: center;">{{customer.name}}'s Account</h5>
+                        <div class="mb-3">
+                            <p  style="font-weight: bolder; text-align: center;">Current Balance</label>
+                              <h6 class="card-text" style="font-size: larger; font-weight: bolder; text-align: center;">₹ {{customer.current_balance}}</h6>
+
+                        </div>
+                        <form action="/delete/{{ customer.id }}" method="post">
+
+                        <button class="btn btn-lg btn-danger btn-block"><i class="fas fa-trash-alt pe-2"></i>DELETE ACCOUNT</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

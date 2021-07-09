@@ -1,0 +1,46 @@
+{% extends "boilerplate.html" %}
+{% block head %}
+  {{ super() }}
+  <link rel="stylesheet" href="../static/styles/form.css">
+{% endblock %}
+{% block content %}
+    <div class="container d-flex justify-content-center align-items-center mt-5 mb-5">
+    <div class="row">
+        <div class="col-md-6 offset-md-3 col-xl-4 offset-xl-4 col-sm-8 offset-sm-2">
+            <div class="card shadow">
+                <img src="https://images.unsplash.com/photo-1515974256630-babc85765b1d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                    alt="" class="card-img-top" />
+                <div class="card-body">
+                    <h5 class="card-title">Transfer Money</h5>
+                    <form action="/transfer" method="POST" class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label class="form-label" for="from">From</label>
+                            <input class="form-control" type="text" id="from" placeholder="Enter your name" name="from" autofocus required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="to_acc">To Account</label>
+                            <input class="form-control" type="text" id="to_acc" placeholder="Enter the Account holder's name" name="to" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="amount">Amount</label>
+                            <input class="form-control" type="text" placeholder="Enter the amount" id="amount" name="amount" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <button class="btn btn-lg btn-warning btn-block"><i class="fas fa-comments-dollar pe-2"></i>TRANSFER</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

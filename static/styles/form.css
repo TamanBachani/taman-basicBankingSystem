@@ -1,0 +1,23 @@
+.card-body{
+    background-color: #FFECAD;
+    color: #003B7A;
+}
+
+.card-title{
+    text-align: center;
+    font-family: 'poppins-bold', sans-serif;
+    font-weight: 600;
+}
+
+.btn{
+    background-color: #FFD60A;
+    color: #003B7A;
+    margin-left: auto;
+    margin-right: auto;
+    display: block
+}
+
+.btn:hover{
+    background-color: #003B7A;
+    color: #FFD60A;
+}

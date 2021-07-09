@@ -1,0 +1,130 @@
+{% extends "boilerplate.html" %}
+{% block head %}
+  {{ super() }}
+<link rel="stylesheet" href="../static/styles/home.css">
+{% endblock %}
+{% block content %}
+<section id="welcome">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6" >
+        <h1 id="welcome-message">Welcome to <br>The Spark Bank!</h1>
+      </div>
+      <div class="col-lg-6">
+          <img id="welcome-image" src="https://images.unsplash.com/photo-1577915207354-8f266a3fc016?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <section id="features" class="mb-3">
+
+<div class="row row-cols-1 row-cols-lg-3 row-cols-md-12">
+  <div class="col">
+    <div class="card h-100">
+      <div class="card-body feature-boxes">
+        <span class="fas fa-solid fa-user-secret fa-3x"></span>
+        <h5 class="card-title feature-title">Transparent</h5>
+        <p  class="card-text feature-description">We keep no secrets, not even Victoria's.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <div class="card-body feature-boxes">
+        <span class="fas fa-solid fa-globe fa-3x"></span>
+        <h5 class="card-title feature-title">Elite Clientele</h5>
+        <p class="feature-description">We have customers from all around the world.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <div class="card-body feature-boxes">
+        <span class="fas fa-solid fa-lock-open fa-3x"></span>
+        <h5 class="card-title feature-title">Super Secure</h5>
+        <p class="feature-description">Put your faith in us, let us see if we have a spark.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </section>
+
+<section id="mainLinks">
+
+  <div class="container marketing">
+
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">View Customers. <span class="text-muted">Phase through the assortment of all our familial customers.</span></h2>
+        <p class="lead">Customers have been represented with exquisite flowers. You can view their balance too.</p>
+        <a href="{{ url_for('all_customers') }}" class="btn btn-primary btn-lg takemethere">TAKE ME THERE<i class="fas fa-arrow-right ms-2"></i></a>
+      </div>
+      <div class="col-md-5">
+        <img src="https://images.unsplash.com/photo-1504976640860-42dcbf3a56da?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1021&q=80" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Make a Transaction. <span class="text-muted">Secure, safe, and speedy.</span></h2>
+        <p class="lead">Shift money from and to accounts, they're all yours.</p>
+        <a href="{{ url_for('transfer') }}" class="btn btn-primary btn-lg takemethere">TAKE ME THERE<i class="fas fa-arrow-right ms-2"></i></a>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="https://images.unsplash.com/photo-1565372519925-842b7778defb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Make an Account. <span class="text-muted sub-heading">Only name, username, and balance required.</span></h2>
+        <p class="lead">You can make as many accounts as you like.</p>
+        <a href="{{ url_for('register') }}" class="btn btn-primary btn-lg takemethere">TAKE ME THERE<i class="fas fa-arrow-right ms-2"></i></a>
+      </div>
+      <div class="col-md-5">
+        <img src="https://images.unsplash.com/photo-1564939558297-fc396f18e5c7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+</section>
+<section id="cta">
+<div class="end">
+<h3 id="cwm">CONNECT WITH ME</h3>
+<div class="sm-icons">
+  <a href="https://www.linkedin.com/in/taman-bachani" id="linkedin"><i class="fab fa-linkedin fa-2x"></i></a>
+  <a href="https://www.github.com/TamanBachani" id="github"><i class="fab fa-github fa-2x"></i></a>
+</div>
+</div>
+
+<!-- <footer id="footer">
+  <span class="fab fa-twitter-square bus-icons"></span>
+  <span class="fab fa-facebook  bus-icons"></span>
+  <span class="fab fa-instagram  bus-icons"></span>
+  <span class="fas fa-envelope-open  bus-icons"></span>
+  <p>© Copyright 2018 TinDog</p>
+
+</footer> -->
+
+</section>
+
+{% endblock %}

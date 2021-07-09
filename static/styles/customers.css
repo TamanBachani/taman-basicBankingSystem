@@ -1,0 +1,46 @@
+.customer-text{
+    padding-left: 50px;
+    padding-right: 50px;
+
+    line-height: 2rem;
+}
+
+
+.cust-gradient{
+    background-image: linear-gradient(#FFECAD, #85C4FF);
+}
+
+.customer{
+    margin-top: 3%;
+    color: #003B7A;
+}
+
+#text-customer{
+    color: #003B7A;
+    font-weight: 700;
+}
+
+
+#customer-name{
+    padding-top: 2%;
+    font-weight: 600;
+
+}
+
+#bal{
+    font-weight: 700;
+}
+
+.customer-button{
+    color: #003B7A;
+    border-width: 0.2rem;
+    border-color: #003B7A;
+    border-radius: 1.3rem;
+    font-weight: 600;
+}
+
+.customer-button:hover{
+    color: #003B7A;
+    background-color: #FFD60A;
+}
+
